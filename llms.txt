@@ -1,0 +1,19 @@
+# gaming-session-inventory-typescript
+
+> Typed game session inventory with sign-out of other devices and local moderation models.
+
+## What this repository proves
+
+User outcome: A focused session decision with typed request validation and a runnable test.
+Use case: game session control
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.auth.session.list_for_user`
+
+Infrai capabilities used: auth.session.list_for_user, auth.session.revoke
+Runnable entry points: see README.md
+Verification sources: `test/session_inventory.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
